@@ -2,6 +2,7 @@
 Proyecto en python con Django, con templates HTMl, js, ORM con  y Taildwind. Desplegado en Dokers
 Remuneraciones y portal del trabajador para pymes	
 Sueldos, cotizaciones previsionales, licencias médicas y cuentas bancarias	Código del Trabajo y Ley 21.719
+
 Riesgo: filtración de sueldos y desvío de pagos
 
 
