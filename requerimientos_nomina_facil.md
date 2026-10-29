@@ -264,16 +264,17 @@ Bibliotecas con fallas conocidas y actualizaciones pendientes.
 - exposición de información a terceros no autorizados
 
 ### Severidad esperada
-| Riesgo | Impacto | Probabilidad | Severidad |
-|---|---|---|---|
-| filtración de sueldos | alto | media | crítico |
-| robo de sesión | alto | media | crítico |
-| manipulación de nómina | crítico | media | crítico |
-| acceso a información médica | crítico | media | crítico |
-| cambio fraudulento de cuenta bancaria | crítico | media | crítico |
-| falta de trazabilidad | alto | alta | alto |
-| credenciales expuestas | alto | media | alto |
-| XSS y CSRF | alto | media | alto |
+| Riesgo                                | Impacto | Probabilidad | Severidad |
+|---------------------------------------|---------|--------------|-----------|
+| filtración de sueldos                 | alto    | media        | crítico   |
+| robo de sesión                        | alto    | media        | crítico   |
+| manipulación de nómina                | crítico | media        | crítico   |
+| acceso a información médica           | crítico | media        | crítico   |
+| cambio fraudulento de cuenta bancaria | crítico | media        | crítico   |
+| falta de trazabilidad                 | alto    | alta         | alto      |
+| credenciales expuestas                | alto    | media        | alto      |
+| XSS y CSRF                            | alto    | media        | alto      |
+|---------------------------------------|---------|--------------|-----------|
 
 ### Conclusión
 La mayor amenaza no es solo la pérdida técnica, sino la pérdida de confianza del trabajador, la empresa y la posible responsabilidad legal asociada a un tratamiento indebido de datos sensibles.
