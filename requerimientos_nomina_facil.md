@@ -10,12 +10,17 @@ La solución debe desarrollarse con Node.js como backend y React + TypeScript co
 
 ### Objetivo general
 Crear un sistema de gestión de nómina y portal del trabajador que permita:
-- registrar y liquidar sueldos
+- registrar y realizar sueldos
 - gestionar cotizaciones previsionales
 - controlar licencias médicas
 - administrar cuentas bancarias para pagos
 - ofrecer acceso seguro a la información del trabajador
 - cumplir con la normativa laboral y de protección de datos
+- Gestionar Permisos
+- gestionar Atrasos
+- gestionar Contrataciones
+- gestionar finiquitos
+- 
 
 ### Objetivos específicos
 - automatizar procesos de remuneración
@@ -106,7 +111,7 @@ Crear un sistema de gestión de nómina y portal del trabajador que permita:
 ## 5. Requisitos funcionales
 
 ### 5.1 Requisitos de negocio
-- El sistema debe permitir liquidar remuneraciones conforme a la normativa laboral vigentes.
+- El sistema debe permitir realizar remuneraciones conforme a la normativa laboral vigentes.
 - Debe registrar cotizaciones previsionales y salud asociadas al trabajador.
 - Debe permitir administrar licencias médicas con soporte documental.
 - Debe mantener una relación segura y trazable entre trabajador y cuenta bancaria de pago.
@@ -311,29 +316,27 @@ La mayor amenaza no es solo la pérdida técnica, sino la pérdida de confianza 
 ## 12. Requisitos tecnológicos
 
 ### Stack propuesto
-- Python
-- Django
-- Django REST Framework (opcional si se requiere API más formal)
+- Typescript
+- Node.js
 - React
-- TypeScript
 - Tailwind CSS
-- ORM
+- ORM prisma supabase
 - Docker
 
 ### Arquitectura sugerida
-- backend en Django para autenticación, lógica de negocio y servicios de nómina
+- backend en Node.js para autenticación, lógica de negocio y servicios de nómina
 - frontend en React + TypeScript para experiencia de usuario y dashboards
 - API REST/JSON para comunicación entre frontend y backend
 - ORM para modelos de negocio y persistencia
-- base de datos relacional
+- base de datos relacional Supabase
 - contenedores para entorno de desarrollo y producción
 - variables de entorno para configuración segura
-- autenticación JWT o sesiones con Django según el diseño final
+- autenticación JWT o sesiones con node.js según el diseño final
 
 ## 13. Historias de usuario
 
 ### Historia 1: Liquidación de sueldo
-Como administrador de RR.HH, quiero liquidar el sueldo de los trabajadores para generar pagos correctos.
+Como administrador de RR.HH, quiero realizar el sueldo de los trabajadores para generar pagos correctos.
 
 Criterios de aceptación:
 - el sistema genera la nómina por periodo
@@ -358,7 +361,7 @@ Criterios de aceptación:
 - RR.HH puede revisarla con permisos específicos
 
 ### Historia 4: Cambio de cuenta bancaria
-Como trabajador, quiero actualizar mi cuenta bancaria para recibir mi pago.
+Como trabajador, quiero actualizar mi cuenta bancaria para rebicir mi pago.
 
 Criterios de aceptación:
 - el sistema valida el cambio
@@ -367,7 +370,7 @@ Criterios de aceptación:
 
 ## 14. Recomendaciones para el desarrollo
 
-- usar Django con buenas prácticas de seguridad
+- usar Node.js con buenas prácticas de seguridad
 - limitar permisos por rol
 - sanitizar entradas y salidas
 - proteger rutas sensibles por permisos
